@@ -9,8 +9,8 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
-import org.testng.annotations.AfterSuite;
-import org.testng.annotations.AfterTest;
+
+
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
@@ -44,7 +44,7 @@ public class TestBase {
 		data = new Properties();
 		FileInputStream fis = null;
 		try {
-			fis = new FileInputStream("C:\\Users\\SAUMYARUP\\Downloads\\MadisionIslandSite\\MadisionIslandSite\\src\\main\\resources\\data.properties");
+			fis = new FileInputStream("C:\\Users\\SAUMYARUP\\git\\MadisonTesting\\MadisonTesting\\src\\main\\resources\\data.properties");
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

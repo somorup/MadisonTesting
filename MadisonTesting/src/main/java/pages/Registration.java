@@ -31,7 +31,7 @@ public class Registration {
 	@FindBy(xpath = "//button[@class='button']")
 	private WebElement registerbuttonBy;
 	@FindBy(xpath = "//span[contains(text(),'Thank you for registering with Madison Island.')]")
-	private WebElement assertcheckBy;
+	private WebElement welcomeMessage;
 
 	public Registration(WebDriver driver) {
 		this.driver = driver;
@@ -57,8 +57,8 @@ public class Registration {
 
 	}
 
-	public String assertcheckBy() {
-		return assertcheckBy.getText();
+	public String getWelcomemessage() {
+		return welcomeMessage.getText();
 	}
 
 }
