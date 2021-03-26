@@ -15,7 +15,7 @@ public class OrderConfirmationpage {
 		PageFactory.initElements(driver, this);
 	}
 	
-	public String assert_chechouttitle() {
+	public String productconfirmmessage() {
 		return chechouttitle.getText();
 	}
 }

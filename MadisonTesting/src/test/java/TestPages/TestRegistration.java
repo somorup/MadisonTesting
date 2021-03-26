@@ -22,7 +22,7 @@ public class TestRegistration extends TestBase {
 		registration.Registration_To_Page(mapData.get("firstname"), mapData.get("middlename"), mapData.get("lastname"),
 				mapData.get("emailid"), mapData.get("password"), mapData.get("confirmpassword"));
 		registration.getWelcomemessage();
-		Assert.assertEquals(registration.getWelcomemessage(), "Thank you for registering with Madison Island.");
+		Assert.assertEquals(registration.getWelcomemessage(),mapData.get("message"));
 		//ScreenShot.screenShot(driver, constants.SCREENSHOT_PASS);
 		//login.Logout();
 

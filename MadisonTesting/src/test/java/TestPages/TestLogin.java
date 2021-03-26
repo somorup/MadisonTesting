@@ -31,7 +31,7 @@ public class TestLogin extends TestBase {
 				data.getProperty("city"), data.getProperty("quantity"), data.getProperty("pincode"),
 				data.getProperty("mobilenumber"));
 
-		Assert.assertEquals(confirm.assert_chechouttitle(), "CHECKOUT");
+		Assert.assertEquals(confirm.productconfirmmessage(), "CHECKOUT");
 		System.out.println("Order has Placed Succesfully");
 	}
 }
